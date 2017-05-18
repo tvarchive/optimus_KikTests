@@ -1,65 +1,25 @@
-# Optimus Template  [![npm version](https://badge.fury.io/js/optimus-cli.svg)](https://badge.fury.io/js/optimus-cli) [![Gitter chat](https://badges.gitter.im/optimus_support/optimus.png)](https://gitter.im/optimus_support/optimus)
+# Mobile App testing using Optimus
 
 Optimus Template is the native framework for Optimus, designed to help you
 to get started with your tests in the swiftest time possible. Read more about Optimus on our [wiki](https://github.com/testvagrant/optimusTemplate/wiki).
 
-### Pre-requisites
-* [HomeBrew](https://brew.sh/), [XCode 8.2 or above](https://developer.apple.com/xcode/) - Mac
-* [LinuxBrew](http://linuxbrew.sh/) - Linux
-* [Chocolatey](https://chocolatey.org/) - Windows
+## How to run this test
+1. Clone the repository.
+2. Select `build.gradle` file from the project and open it as a project.
+3. There are two options for running your tests -
+   1.  Go to your IntelliJ terminal and type the following -
 
+     ` gradle clean build runFragmentation -DtestFeed="kik" -Dtags=@helloKik`
 
+    Here you can choose to replace the tags in the feature
+    files which you will find under `src/test/resources`
 
-### Getting started with Optimus
-Install the <b>optimus-cli</b> utilty
+   2.  The other option is to go to Run->Edit Configurations from your menu and
+     click on it.Then click on Defaults->Cucumber java.You will see a configuration
+     tab on the top right side.Under that you will find VM options.There you have
+     to write the following :
 
-```
-npm install -g optimus-cli
-```
+     `-DtestFeed=kik -DrunMode=Fragmentation`
 
-Verify if your system is ready for using Optimus
-
-```
-$ optimus doctor
-```
-
-Install if `optimus doctor` reported any missing dependencies.
-
-```
-$ optimus setup
-```
-
-To create a new Optimus project.
-
-```
-$ optimus new <project_name>
-```
-Once the project is created you can import the project into your favourite IDE. However we love [IntelliJ](https://github.com/testvagrant/optimusTemplate/wiki/Import-Optimus-Project---Intellij) though. 
-
-### Import Project
-* [IntelliJ](https://github.com/testvagrant/optimusTemplate/wiki/Import-Optimus-project-using-Intellij)
-* [Eclipse](https://github.com/testvagrant/optimusTemplate/wiki/Import-Optimus-project-using-Eclipse)
-
-
-### Run
-
-Your new OptimusTemplate project gets created with a sample test for an example app `HelloOptimus` you can run your project as shown below.
-
-#### Step 1: Connect devices(Android or IOs) or create an Android Emulator.
-#### Step 2: Open your favourite terminal and navigate to the project folder.
-#### Step 3: Check for Android Devices or Emulators by running
-    gradle clean build runFragmentation -DtestFeed=OptimusAndroid -Dtags=@helloOptimus
-Note: You will see that HelloOptimus app is launched on all the connected Android Devices and emulators.
-#### Step 4: Check for IOS by running
-    gradle clean build runFragmentation -DtestFeed=OptimusIOS -Dtags=@helloOptimus
-Note: You will see that HelloOptimus app is launched on a IPhone6 Simulator. 
-
-### First test
-You can learn more about the test which ran on your devices by following our [Android Tutorial](https://github.com/testvagrant/optimusTemplate/wiki/My-First-Android-Test) or [IOS Tutorial](https://github.com/testvagrant/optimusTemplate/wiki/My-First-IOS-Test)
-
-### Contact
-Our [FAQ](https://github.com/testvagrant/optimusTemplate/wiki/FAQ) covers most of the common issues. In case the issue you are facing is not available, you can reach out to us at optimus@testvagrant.com
-
-
-
-
+     After doing this, go to any of the feature files and right click on any
+     scenario and select Run option.
