@@ -1,8 +1,3 @@
-# Mobile App testing using Optimus
-
-Optimus Template is the native framework for Optimus, designed to help you
-to get started with your tests in the swiftest time possible. Read more about Optimus on our [wiki](https://github.com/testvagrant/optimusTemplate/wiki).
-
 ## How to run this test
 1. Clone the repository.
 2. Select `build.gradle` file from the project and open it as a project.
