@@ -19,6 +19,6 @@
      After doing this, go to any of the feature files and right click on any
      scenario and select Run option.
      
-*For this running this test, you will need two emulators or devices up and runnuning*      
+*For this running this test, you will need two emulators or devices up and running*      
 
 #####  No more updates about Optimus in this Wiki.
