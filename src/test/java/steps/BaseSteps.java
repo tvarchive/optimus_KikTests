@@ -86,9 +86,9 @@ public class BaseSteps {
     protected LinkedHashMap<String,String> getConversation(){
         conversation = new LinkedHashMap<>();
         conversation.put("Hi","Hey");
-        conversation.put("How you doing?","I'm doing good");
-        conversation.put("That's nice to hear","What about you?");
-        conversation.put("It's cool.Talk to you later.","Later.");
+        conversation.put("Have you heard about Optimus?","What is it?");
+        conversation.put("It's the cool new inter-app testing framework created by TestVagrant","Wow!Tell me more.");
+        conversation.put("Testing apps never got so easy!","If it's so,I gotta use it!");
         return conversation;
     }
 }

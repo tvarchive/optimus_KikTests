@@ -25,9 +25,9 @@ public class ChatPage extends BasePage {
         this.driver = driver;
     }
 
-    public void typeTextMessage(String con) {
+    public void typeTextMessage(String message) {
         waitForElementToBeVisible(textNewMessage);
-        textNewMessage.sendKeys(con);
+        textNewMessage.sendKeys(message);
     }
 
     public void sendMessage() {
