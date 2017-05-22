@@ -1,6 +1,7 @@
 package pages;
 
 import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -18,11 +19,8 @@ public class LoginPage extends BasePage {
     @FindBy(id = "validateable_text_view")
     private List<WebElement> password;
 
-    @FindBy(id = "not_now_sync_button")
-    private WebElement notNowButton;
-
-    @FindBy(id = "button_confirm")
-    private WebElement confirm;
+    private By notNowButton = By.id("not_now_sync_button");
+    private By confirm = By.id("button_confirm");
 
     private AppiumDriver driver;
 
@@ -49,12 +47,12 @@ public class LoginPage extends BasePage {
     }
 
     public void tapOnNotNowButton(){
-        waitForElementToBeVisible(notNowButton);
-        notNowButton.click();
+        waitForElementToBeVisible(notNowButton,1);
+        clickBy(notNowButton);
     }
 
     public void tapOnConfirmButton(){
-        waitForElementToBeVisible(confirm);
-        confirm.click();
+        waitForElementToBeVisible(confirm,1);
+        clickBy(confirm);
     }
 }
