@@ -21,7 +21,6 @@ public class LoginPage extends BasePage {
 
     private By notNowButton = By.id("not_now_sync_button");
     private By confirm = By.id("button_confirm");
-
     private AppiumDriver driver;
 
     public LoginPage(AppiumDriver driver) {

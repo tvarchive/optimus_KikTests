@@ -17,7 +17,7 @@
         "androidOnlyCapabilities": {
           "appActivity": "kik.android.chat.activity.IntroActivity",
           "appPackage": "kik.android",
-          "avdLaunchTimeout": 300000,
+          "avdLaunchTimeout": 4000000,
           "useKeystore": false
         }
       },
@@ -38,7 +38,7 @@
         "androidOnlyCapabilities": {
           "appActivity": "kik.android.chat.activity.IntroActivity",
           "appPackage": "kik.android",
-          "avdLaunchTimeout": 300000,
+          "avdLaunchTimeout": 4000000,
           "useKeystore": false
         }
       },

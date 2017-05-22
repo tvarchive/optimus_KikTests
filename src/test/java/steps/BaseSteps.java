@@ -58,12 +58,6 @@ public class BaseSteps {
         System.out.println("With password -- " + user1.getPassword());
         new LoginPage(getDriverForUser1()).enterPassword(user1.getPassword());
         new LoginPage(getDriverForUser1()).tapOnLogin();
-        try {
-            new LoginPage(getDriverForUser1()).tapOnNotNowButton();
-            new LoginPage(getDriverForUser1()).tapOnConfirmButton();
-        } catch (Exception e) {
-
-        }
     }
 
     protected void loginAsUser2() {
