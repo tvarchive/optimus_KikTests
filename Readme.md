@@ -4,7 +4,7 @@
 3. There are two options for running your tests -
    1.  Go to your IntelliJ terminal and type the following -
 
-     ` gradle clean build runFragmentation -DtestFeed="kik" -Dtags=@helloKik`
+     ` gradle clean build runDistribution -DtestFeed="kik" -Dtags=@helloKik`
 
     Here you can choose to replace the tags in the feature
     files which you will find under `src/test/resources`
@@ -14,11 +14,11 @@
      tab on the top right side.Under that you will find VM options.There you have
      to write the following :
 
-     `-DtestFeed=kik -DrunMode=Fragmentation`
+     `-DtestFeed=kik -DrunMode=Distribution`
 
      After doing this, go to any of the feature files and right click on any
      scenario and select Run option.
-     
+
 *For this running this test, you will need two emulators or devices up and running*      
 
 #####  No more updates about Optimus in this Wiki.
