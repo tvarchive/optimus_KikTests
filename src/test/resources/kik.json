@@ -12,7 +12,8 @@
       "optimusDesiredCapabilities": {
         "appiumServerCapabilities": {
           "app": "kik.apk",
-          "platformName": "Android"
+          "platformName": "Android",
+          "newCommandTimeout": 60
         },
         "androidOnlyCapabilities": {
           "appActivity": "kik.android.chat.activity.IntroActivity",
@@ -33,7 +34,8 @@
       "optimusDesiredCapabilities": {
         "appiumServerCapabilities": {
           "app": "kik.apk",
-          "platformName": "Android"
+          "platformName": "Android",
+          "newCommandTimeout": 60
         },
         "androidOnlyCapabilities": {
           "appActivity": "kik.android.chat.activity.IntroActivity",

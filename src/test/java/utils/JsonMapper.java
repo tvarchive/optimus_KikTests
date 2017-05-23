@@ -11,7 +11,7 @@ public class JsonMapper {
 
     private JsonMapper() {
         gson = new Gson();
-        InputStream credentialsStream = getClass().getClassLoader().getResourceAsStream("Credentials.json");
+        InputStream credentialsStream = getClass().getClassLoader().getResourceAsStream("testData/Credentials.json");
         reader = new BufferedReader(new InputStreamReader(credentialsStream));
     }
 
