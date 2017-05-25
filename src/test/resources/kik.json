@@ -13,7 +13,7 @@
         "appiumServerCapabilities": {
           "app": "kik.apk",
           "platformName": "Android",
-          "newCommandTimeout": 60
+          "newCommandTimeout": 120
         },
         "androidOnlyCapabilities": {
           "appActivity": "kik.android.chat.activity.IntroActivity",
@@ -35,7 +35,7 @@
         "appiumServerCapabilities": {
           "app": "kik.apk",
           "platformName": "Android",
-          "newCommandTimeout": 60
+          "newCommandTimeout": 120
         },
         "androidOnlyCapabilities": {
           "appActivity": "kik.android.chat.activity.IntroActivity",

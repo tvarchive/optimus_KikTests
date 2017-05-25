@@ -24,4 +24,10 @@ public class LoginSteps extends BaseSteps{
         loginAsUser1(dataForUser1.get("username"),dataForUser1.get("password"));
         loginAsUser2(dataForUser2.get("username"),dataForUser2.get("password"));
      }
+
+    @When("^I log into my account with ([^\"]*)$")
+    public void iLogIntoMyAccountWithUsernameAndPasswordAs(String userDetails){
+        loginAsUser1(userDetails);
+        loginAsUser2(userDetails);
+    }
 }
