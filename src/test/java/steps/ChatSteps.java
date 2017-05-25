@@ -1,6 +1,6 @@
 package steps;
 
-import cucumber.api.java.en.When;
+import cucumber.api.java.en.And;
 import pages.ChatPage;
 
 import java.util.Iterator;
@@ -8,8 +8,8 @@ import java.util.Map;
 
 public class ChatSteps extends BaseSteps {
 
-    @When("^I send her some message$")
-    public void iSendHerSomeMessage() {
+    @And("^I send him some message$")
+    public void iSendHimSomeMessage() {
         Iterator it = getConversation().entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry pair = (Map.Entry) it.next();

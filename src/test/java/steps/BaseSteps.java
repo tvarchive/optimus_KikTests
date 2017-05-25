@@ -49,7 +49,24 @@ public class BaseSteps {
         return user2;
     }
 
-    protected void loginAsUser1() {
+    protected void loginAsUser1(String username,String password){
+        new LoginPage(getDriverForUser1()).enterUsername(username);
+        new LoginPage(getDriverForUser1()).enterPassword(password);
+        new LoginPage(getDriverForUser1()).tapOnLogin();
+    }
+
+    protected void loginAsUser2(String username,String password){
+        new LoginPage(getDriverForUser2()).enterUsername(username);
+        new LoginPage(getDriverForUser2()).enterPassword(password);
+        new LoginPage(getDriverForUser2()).tapOnLogin();
+        try {
+            new LoginPage(getDriverForUser2()).tapOnNotNowButton();
+            new LoginPage(getDriverForUser2()).tapOnConfirmButton();
+        } catch (Exception e) {
+
+        }
+    }
+  /*  protected void loginAsUser1() {
         System.out.println("Navigating to login page...");
         User user1 = user1();
         System.out.println("Logging in as user1...");
@@ -75,7 +92,7 @@ public class BaseSteps {
         } catch (Exception e) {
 
         }
-    }
+    }*/
 
     protected LinkedHashMap<String,String> getConversation(){
         conversation = new LinkedHashMap<>();
